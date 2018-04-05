@@ -29,3 +29,8 @@ mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j
+
+cd ..
+echo "Converting vocabulary to binary"
+echo $(pwd)
+./tools/bin_vocabulary
